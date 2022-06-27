@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import img from "../assets/images/photo.jpg";
+import img from "../assets/images/photo.png";
 import Navbar from "../components/Navbar";
 
 function Sidebar() {
@@ -26,6 +26,7 @@ function Sidebar() {
       <div className="d-flex flex-column">
         <div className="profile">
           <img
+            style={{ filter: "saturate(0)" }}
             src={img}
             alt="Portfile picture"
             className="img-fluid rounded-circle"

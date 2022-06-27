@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import img from "../assets/images/photo.jpg";
+import img from "../assets/images/photo.png";
 
 function About() {
   const [birthYear] = useState(1997);
@@ -34,7 +34,12 @@ function About() {
 
         <div className="row">
           <div className="col-lg-4" data-aos={"fade-right"}>
-            <img src={img} className="img-fluid" alt="About page photo" />
+            <img
+              src={img}
+              style={{ filter: "saturate(0)" }}
+              className="img-fluid"
+              alt="About page photo"
+            />
           </div>
           <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos={"fade-left"}>
             <h3>Front-end &amp; React Developer</h3>
