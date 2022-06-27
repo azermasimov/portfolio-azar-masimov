@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import img from "../assets/images/fakeProfile.avif";
+import img from "../assets/images/photo.jpg";
 import Navbar from "../components/Navbar";
 
 function Sidebar() {

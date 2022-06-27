@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import img from "../assets/images/fakeProfile.avif";
+import img from "../assets/images/photo.jpg";
 
 function About() {
   const [birthYear] = useState(1997);
@@ -38,9 +38,7 @@ function About() {
           </div>
           <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos={"fade-left"}>
             <h3>Front-end &amp; React Developer</h3>
-            <h5 className="fst-italic m-3">
-              Do something great :)
-            </h5>
+            <h5 className="fst-italic m-3">Do something great :)</h5>
             <div className="row">
               <div className="col-lg-6">
                 <ul>
@@ -50,7 +48,10 @@ function About() {
                   </li>
                   <li>
                     <i className="bi bi-chevron-right"></i>{" "}
-                    <strong>Website:</strong> <a href={location}><span>{location}</span></a>
+                    <strong>Website:</strong>{" "}
+                    <a href={location}>
+                      <span>{location}</span>
+                    </a>
                   </li>
                   <li>
                     <i className="bi bi-chevron-right"></i>{" "}
