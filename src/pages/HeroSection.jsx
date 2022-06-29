@@ -1,5 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
+import Resume from "../assets/docs/AzarResume.pdf";
 
 function HeroSection() {
   return (
@@ -27,7 +28,7 @@ function HeroSection() {
         </span>
 
         <button type="button" className="px-3 btn btn-outline-light">
-          Download Resume
+          <a href={Resume} target="_blank">Download Resume</a>
         </button>
       </div>
     </section>
